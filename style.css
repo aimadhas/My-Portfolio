@@ -1,0 +1,353 @@
+@import url( 'https://fonts.googleapis.com/css2?famille =Roboto + Mono: wght @ 500&afficher = swap ');
+:root {
+    --main-color: #F1F0F6;
+    --secound-color: white;
+    --third-color:#FAFAFA;
+    --yelow:#FCB200;
+    --pane-padding: 5px 42px;
+  }
+  *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+  }
+  body
+   {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    height: 100vh;
+    background-color: var(--main-color);
+
+   }
+  .first-div{
+    background-color: white;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+  }
+   .first-div img{
+    border-radius: 40px;
+    width: 350px;
+  }
+  .introduction
+  {
+    padding: 40px;
+  }
+  .introduction p
+  {
+    width: 60%;
+    margin-top: 30px;
+    text-align: justify;
+  }
+  .introduction h1
+  {
+    font-size: 40px;
+    width: 80%;
+  }
+  .introduction h1 span
+  {
+    color: var(--yelow);
+  }
+  .icons{
+    margin: 18px 0px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .icons i{
+    font-size: 24px;
+  }
+   .icons a{
+    text-decoration: none;
+    color: black;
+    
+  }
+  .icons a:hover{
+    color: #FCB200;
+  }
+
+.general-information {
+  width: 25%;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-color: var(--secound-color);
+  padding: 20px;
+  margin-top: 20px;
+  height: 1800px;
+}
+
+.information {
+  width: 75%;
+  padding: 18px 0px;
+  flex-grow: 1; 
+
+}
+
+.bar{
+  width: 5%;
+  position: fixed; /* Fix the position */
+  top: 0; /* Position it at the top of the viewport */
+  bottom: 0; /* Extend it to the bottom of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: var(--third-color);
+  height: 100%;
+}
+.cvimg{
+  width: 170px;
+  height:170px ;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.cvimg img{
+  width: 100%;
+  border-radius: 50%;
+}
+.info-aboutme{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom:  1px solid rgb(190, 183, 183);
+}
+.info-aboutme h1{
+  font-size: 18px;
+  margin-top: 40px;
+}
+.info-aboutme p{
+  color: gray;
+}
+.info2{
+  margin:20px 0px ;
+  border-bottom: 1px solid rgb(190, 183, 183);
+}
+.all{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.first{
+  background-color: #FCB200;
+}
+.parent{
+  width: 100%;
+  height: 6px;
+  background-color:rgb(190, 183, 183) ;
+  position: relative;
+  border-radius: 20px;
+}
+.languages{
+  margin: 20px 0px;
+}
+.language{
+  display: flex ;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+.one{
+width: 0%;
+background-color: #FCB200;
+height: 100%;
+border-radius: 20px;
+transition: all 0.3s ease-in;
+
+}
+.two{
+width: 0%;
+background-color: #FCB200;
+height: 100%;
+border-radius: 20px;
+
+}
+.three{
+  width: 0%;
+background-color: #FCB200;
+height: 100%;
+border-radius: 20px;
+transition: all 0.3s ease-in;
+}
+.childone{
+  width: 0%;
+  background-color: #FCB200;
+  height: 100%;
+  border-radius: 20px;
+transition: all 0.3s ease-in;
+
+}
+.childtwo{
+  width: 0%;
+  background-color: #FCB200;
+  height: 100%;
+  border-radius: 20px;
+  transition: all 0.3s ease-in;
+}
+.childThree{
+  width: 0%;
+  background-color: #FCB200;
+  height: 100%;
+  border-radius: 20px;
+  transition: all 0.3s ease-in;
+}
+.childfour{
+  width: 0%;
+  background-color: #FCB200;
+  height: 100%;
+  border-radius: 20px;
+  transition: all 0.3s ease-in;
+}
+.childfive{
+  width: 0%;
+  background-color: #FCB200;
+  height: 100%;
+  border-radius: 20px;
+  transition: all 0.3s ease-in;
+}
+.projects {
+  margin: 40px 0;
+}
+
+.projects h1 {
+  text-align: center;
+}
+
+.ALLproject {
+  margin: 40px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Create a grid with flexible columns */
+  gap: 20px;
+}
+
+.project {
+  background-color:var(--third-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.project img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+
+}
+.paragraphe{
+  position: absolute;
+  background-color: rgba(245, 241, 44, 0.5);
+  width: 100%;
+  height: 0%;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  bottom: 0;
+}
+.paragraphe p{
+  text-align: center;
+  font-size: 18px;
+  width: 80%;
+  opacity: 0;
+}
+.paragraphe a{
+  text-decoration: none;
+  color: black;
+  background-color: #FCB200;
+  padding: 15px 25px;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.project:hover > .paragraphe{
+  height: 100%;
+  transition: all 0.3s ease-in;
+}
+.project:hover > .paragraphe p{
+  opacity: 1;
+  transition: all 0.4s ease-in;
+}
+.project:hover > .paragraphe a {
+  opacity: 1;
+  transition: all 0.4s ease-in;
+}
+.title{
+
+  bottom: 34px;
+  opacity: 0;
+  position: relative;
+  transition: all 0.3s ease-in;
+}
+@media  (max-width: 950px) {
+  .first-div{
+    background-color: white;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    margin: 0px 20px;
+  }
+   .first-div img{
+    border-radius: 40px;
+    width: 200px;
+  }
+  .introduction
+  {
+    padding: 40px;
+  }
+  .introduction p
+  {
+    width: 80%;
+    margin-top: 30px;
+    text-align: justify;
+  }
+  .introduction h1
+  {
+    font-size: 20px;
+    width: 100%;
+  }
+  .ALLproject {
+    padding: 20px 20px;
+    margin: 40px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create a grid with flexible columns */
+    gap: 20px;
+  }
+  .general-information {
+    width: 25%;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: var(--secound-color);
+    padding: 20px;
+    margin-top: 20px;
+    height: auto;
+  }
+  
+}
+@media  (max-width: 755px) {
+body{
+  flex-direction: column;
+  padding: 0px 40px;
+}
+.information{
+  width: 100%;
+}
+.first-div{
+  display: none;
+}
+.general-information{
+  width: 100%;
+  border-radius: 40px;
+}
+}
